@@ -1,8 +1,13 @@
 import Head from 'next/head'
+import IframeResizer from 'iframe-resizer-react'
+import {useRef} from "react";
 
 
 
 export default function Home() {
+
+    const iframeRef = useRef(null);
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
@@ -20,15 +25,15 @@ export default function Home() {
 
           <div className="">
               <iframe src="https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE" />
-              {/*<IframeResizer*/}
-              {/*    checkOrigin={false}*/}
-              {/*    title="Comments"*/}
-              {/*    src={`https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE`}*/}
-              {/*    style={{*/}
-              {/*        width: '1px',*/}
-              {/*        minWidth: '100%'*/}
-              {/*    }}*/}
-              {/*/>*/}
+              <IframeResizer
+                  checkOrigin={false}
+                  title="Comments"
+                  src={`https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE`}
+                  style={{
+                      width: '1px',
+                      minWidth: '100%'
+                  }}
+              />
           </div>
 
       </main>
