@@ -11,24 +11,24 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-6xl font-bold  mb-10">
           Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Rokas JS!
+          <a className="text-blue-600" href="https://byrookas.com">
+            Quick Feedback Demo in Next JS!
           </a>
         </h1>
 
-          <div>
-              {/*<iframe src="https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE" />*/}
-              <IframeResizer
-                  checkOrigin={false}
-                  title="Comments"
-                  src={`https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE`}
-                  style={{
-                      width: '1px',
-                      minWidth: '100%'
-                  }}
-              />
+          <div className="">
+              <iframe src="https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE" />
+              {/*<IframeResizer*/}
+              {/*    checkOrigin={false}*/}
+              {/*    title="Comments"*/}
+              {/*    src={`https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE`}*/}
+              {/*    style={{*/}
+              {/*        width: '1px',*/}
+              {/*        minWidth: '100%'*/}
+              {/*    }}*/}
+              {/*/>*/}
           </div>
 
       </main>
