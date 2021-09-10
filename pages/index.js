@@ -6,12 +6,12 @@ import {useRef} from "react";
 
 export default function Home() {
 
-    const iframeRef = useRef(null);
+    // const iframeRef = useRef(null);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>Create Next App</title>
+        <title>Quick Feedback Demo App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -24,16 +24,20 @@ export default function Home() {
         </h1>
 
           <div className="">
-              <iframe src="https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE" />
-              <IframeResizer
-                  checkOrigin={false}
-                  title="Comments"
-                  src={`https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE`}
-                  style={{
-                      width: '1px',
-                      minWidth: '100%'
-                  }}
-              />
+              <div>
+                <iframe src="https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE" />
+              </div>
+              <div>
+                  <IframeResizer
+                      checkOrigin={false}
+                      title="Comments"
+                      src={`https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE`}
+                      style={{
+                          width: '1px',
+                          minWidth: '100%'
+                      }}
+                  />
+              </div>
           </div>
 
       </main>
