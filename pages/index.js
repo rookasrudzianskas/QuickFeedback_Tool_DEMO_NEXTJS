@@ -34,7 +34,8 @@ export default function Home() {
                       src={`https://quickfeedback.digital/embed/MWiWRZN1PrAkdqdxDtAE`}
                       style={{
                           width: '1px',
-                          minWidth: '100%'
+                          minWidth: '100%',
+                          minHeight: '100%',
                       }}
                   />
               </div>
